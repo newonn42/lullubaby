@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>영유아 건강검진 일정표 | 차수별 시기·검사항목 체크 (무료)</title>
+<meta name="description" content="생후 14일부터 만 6세까지 영유아 건강검진 차수별 시기와 검사 항목을 정리한 무료 체크리스트. 국가 지원 무료 검진을 챙기세요.">
+<link rel="canonical" href="https://lullubaby.com/infant-checkup.html">
+<meta property="og:title" content="영유아 건강검진 일정표 | 차수별 시기·검사항목 체크 (무료)">
+<meta property="og:description" content="생후 14일부터 만 6세까지 영유아 건강검진 차수별 시기와 검사 항목을 정리한 무료 체크리스트. 국가 지원 무료 검진을 챙기세요.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://lullubaby.com/infant-checkup.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--b:#5a8a6a;--b2:#4a7359;--ok:#059669;--txt:#111827;--t2:#6b7280;--t3:#9ca3af;--bg:#fff;--bg2:#f8fafc;--bg3:#f1f5f9;--bd:#e2e8f0;--rrs:12px;--rrxs:8px;--dur:.15s;}
+*{box-sizing:border-box;}
+body{overflow-x:hidden;margin:0;font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,sans-serif;background:var(--bg);color:var(--txt);line-height:1.65;}
+strong,b{font-weight:600;}
+a{color:inherit;text-decoration:none;}
+.nav{border-bottom:1px solid var(--bd);padding:14px clamp(16px,4vw,40px);display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{font-size:15px;font-weight:700;}
+.nav-right{display:flex;gap:16px;align-items:center;}
+.nav-link{font-size:13px;font-weight:600;color:var(--t2);}
+.nav-link:hover{color:var(--b);}
+.wrap{max-width:760px;margin:0 auto;padding:32px 20px 60px;}
+.breadcrumb{font-size:12px;color:var(--t3);margin-bottom:16px;}
+.breadcrumb a:hover{color:var(--b);}
+.page-head{display:flex;align-items:center;gap:12px;margin-bottom:8px;}
+.page-icon{width:48px;height:48px;border-radius:var(--rrs);background:var(--bg2);display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0;}
+.page-title{font-size:23px;font-weight:800;}
+.page-desc{font-size:16px;font-weight:700;color:var(--txt);margin-bottom:20px;}
+.progress-wrap{position:sticky;top:0;background:var(--bg);padding:14px 0;z-index:5;border-bottom:1px solid var(--bd);margin-bottom:8px;}
+.progress-info{display:flex;justify-content:space-between;font-size:13px;font-weight:700;margin-bottom:8px;}
+.progress-bar{height:8px;background:var(--bg3);border-radius:99px;overflow:hidden;}
+.progress-fill{height:100%;background:var(--ok);transition:width .3s;width:0;}
+.group{margin-bottom:28px;}
+.group-title{font-size:15px;font-weight:700;margin:0 0 12px;}
+.check-item{display:flex;gap:12px;align-items:flex-start;padding:14px;min-height:48px;border:1px solid var(--bd);border-radius:var(--rrxs);margin-bottom:8px;cursor:pointer;transition:all var(--dur);}
+.check-item:hover{border-color:var(--b);}
+.check-item.done{background:var(--bg2);border-color:var(--ok);}
+.check-box{width:22px;height:22px;border:2px solid var(--bd);border-radius:6px;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:14px;color:#fff;transition:all var(--dur);}
+.check-item.done .check-box{background:var(--ok);border-color:var(--ok);}
+.check-text{font-size:14px;font-weight:600;}
+.check-item.done .check-text{text-decoration:line-through;color:var(--t3);}
+.check-note{font-size:12px;color:var(--t3);margin-top:2px;}
+.btn-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;}
+.print-btn{font-size:13px;font-weight:700;color:#fff;background:var(--b);border:1px solid var(--b);border-radius:var(--rrxs);padding:8px 16px;cursor:pointer;font-family:inherit;min-height:40px;}
+.print-btn:hover{background:var(--b2,#4a7359);}
+.reset-btn{font-size:13px;font-weight:700;color:var(--t2);background:none;border:1px solid var(--bd);border-radius:var(--rrxs);padding:8px 16px;cursor:pointer;margin-top:8px;font-family:inherit;}
+.reset-btn:hover{border-color:var(--b);color:var(--b);}
+.guide{font-size:14px;color:var(--t2);line-height:1.8;border-top:1px solid var(--bd);padding-top:28px;margin-top:36px;}
+.guide h2{font-size:17px;font-weight:700;color:var(--txt);margin:0 0 12px;}
+.guide h3{font-size:14px;font-weight:700;color:var(--txt);margin:20px 0 8px;}
+.guide ul{margin:0 0 8px;padding-left:18px;}
+.guide li{font-size:14px;color:var(--t2);line-height:1.8;}
+.guide .last-updated{font-size:12px;color:var(--t3);margin-top:20px;}
+.guide .guide-note{font-size:13px;color:var(--t3);margin-top:16px;padding-top:16px;border-top:1px solid var(--bd);}
+.faq-section{margin-top:40px;}
+.faq-section h2{font-size:17px;font-weight:700;margin-bottom:12px;}
+.faq-item{border-bottom:1px solid var(--bd);padding:14px 0;}
+.faq-item summary{cursor:pointer;font-size:14px;font-weight:600;list-style:none;display:flex;gap:8px;align-items:baseline;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::before{content:'Q.';color:var(--b);font-weight:700;flex-shrink:0;}
+.faq-item[open] summary{color:var(--b);}
+.faq-answer{margin-top:8px;padding-left:20px;font-size:13px;color:var(--t2);line-height:1.7;}
+.footer{border-top:1px solid var(--bd);padding:28px clamp(16px,4vw,40px);background:var(--bg2);margin-top:48px;}
+.footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:32px;align-items:start;}
+.footer-brand{display:flex;flex-direction:column;gap:8px;}
+.footer-logo{display:flex;align-items:center;gap:8px;}
+.footer-logo-mark{width:28px;height:28px;border-radius:7px;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-size:15px;}
+.footer-logo-text{font-size:14px;font-weight:700;}
+.footer-tagline{font-size:13px;color:var(--t2);margin:0;line-height:1.7;}
+.footer-col-title{font-size:11px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;}
+.footer-col-link{display:block;font-size:13px;font-weight:600;color:var(--t2);padding:3px 0;transition:color var(--dur);}
+.footer-col-link:hover{color:var(--b);}
+.footer-bottom{max-width:1100px;margin:20px auto 0;padding-top:16px;border-top:1px solid var(--bd);text-align:center;}
+.footer-copy{font-size:12px;color:var(--t3);}
+@media(max-width:680px){.footer-inner{grid-template-columns:1fr;gap:24px;}.nav-right .nav-link:not(.nav-home){display:none;}}
+
+/* ── RELATED-LINKS-V1 START ── */
+.related-pages{margin:32px 0 8px;}
+.related-pages h2{font-size:16px;font-weight:700;margin:0 0 12px;}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;}
+.related-link{display:flex;align-items:center;gap:10px;padding:12px 14px;border:1px solid var(--bd);border-radius:10px;text-decoration:none;transition:all var(--dur);min-height:48px;}
+.related-link:hover{border-color:var(--b);background:var(--bg2);}
+.related-link-icon{font-size:20px;flex-shrink:0;}
+.related-link-name{font-size:13px;font-weight:600;color:var(--txt);}
+/* ── RELATED-LINKS-V1 END ── */
+
+.to-top{position:fixed;right:16px;bottom:16px;width:48px;height:48px;border-radius:50%;background:var(--b);color:#fff;border:none;font-size:20px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.15);display:none;align-items:center;justify-content:center;z-index:50;}
+.to-top.show{display:flex;}
+@media print{.to-top{display:none!important;.btn-row,.to-top{display:none!important;}}}
+/* ── AD-SLOT-V1 ── */
+.ad-slot{margin:0;min-height:0;display:flex;align-items:center;justify-content:center;background:transparent;border:none;border-radius:var(--rrs);color:var(--t3);font-size:12px;text-align:center;overflow:hidden;}
+.ad-slot .ad-label{opacity:.6;}
+.ad-slot ins{display:block;width:100%;}
+@media print{.ad-slot{display:none!important;}}
+/* ── AD-SLOT-V1 END ── */
+/* ── SHARE-V1 ── */
+.share-row{display:flex;gap:8px;align-items:center;margin:24px 0 8px;padding-top:20px;border-top:1px solid var(--bd);}
+.share-label{font-size:13px;font-weight:600;color:var(--t2);margin-right:2px;}
+.share-btn{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:600;color:var(--txt);background:#fff;border:1px solid var(--bd);border-radius:999px;padding:8px 15px;cursor:pointer;font-family:inherit;min-height:40px;transition:all .15s;}
+.share-btn:hover{border-color:var(--b);color:var(--b);}
+.share-btn.share-native{display:none;}
+.share-btn.copied{border-color:var(--b);color:var(--b);background:#f0f5f1;}
+@media(hover:none) and (pointer:coarse){.share-btn.share-native{display:inline-flex;}}
+@media print{.share-row{display:none!important;}}
+/* ── SHARE-V1 END ── */
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "룰루베이비",
+      "item": "https://lullubaby.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "영유아 건강검진 체크",
+      "item": "https://lullubaby.com/infant-checkup.html"
+    }
+  ]
+}
+</script>
+<!-- 애드센스 승인 후 아래 주석을 해제하세요 (게시자 ID 입력 필요):
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+-->
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">🌙 룰루베이비</a>
+  <div class="nav-right">
+    <a href="index.html" class="nav-link nav-home">🏠 홈</a>
+    <a href="essentials.html" class="nav-link">🛒 추천 육아템</a>
+    <a href="info.html" class="nav-link">📖 육아 정보</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="breadcrumb"><a href="index.html">룰루베이비</a> › 영유아 건강검진 체크</div>
+  <div class="page-head">
+    <div class="page-icon">🏥</div>
+    <h1 class="page-title">영유아 건강검진 체크</h1>
+  </div>
+  <p class="page-desc">8차 정기검진 + 구강검진 시기 놓치면 전액 본인부담</p>
+
+  <div class="progress-wrap">
+    <div class="progress-info"><span id="prog-label">0개 완료</span><span id="prog-pct">0%</span></div>
+    <div class="progress-bar"><div class="progress-fill" id="prog-fill"></div></div>
+  </div>
+
+  <div id="checklist-root"></div>
+  <div class="btn-row">
+    <button class="print-btn" onclick="window.print()">🖨️ 인쇄 / PDF 저장</button>
+    <button class="reset-btn" onclick="resetAll()">🔄 전체 초기화</button>
+  </div>
+
+  <!-- AD-SLOT-V1 [content-mid] -->
+  <div class="ad-slot" data-ad-position="content-mid">
+    <!-- 승인 후 ins 코드 삽입 위치 -->
+    <!-- 애드센스 승인 후 아래 형태로 교체:
+    <ins class="adsbygoogle" style="display:block"
+      data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+      data-ad-slot="XXXXXXXXXX"
+      data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+  </div>
+  <!-- AD-SLOT-V1 END -->
+  <div class="guide">
+    <h2>이용 안내</h2>
+    <p>영유아 건강검진은 &#x27;건강iN&#x27;(국민건강보험공단) 누리집이나 앱에서 대상 시기와 지정 검진기관을 확인할 수 있습니다.<br>
+    검진 시기는 각 차수마다 일정 기간이 정해져 있어, 그 기간을 넘기면 무료 검진 대상에서 제외될 수 있으므로 미리 예약하는 것이 좋습니다.<br>
+    검진 결과 발달이 늦다는 소견이 나와도 지나치게 걱정하기보다 담당 의사와 상담해 추적 관찰하는 것이 바람직합니다.</p>
+
+    <h3>참고사항</h3>
+    <ul>
+      <li>영유아 건강검진: 국민건강보험법 제52조 근거. 생후 14일~71개월 8차 무료 제공.</li>
+      <li>검진 기간 초과 시 해당 차수 검진 불가. 건강보험공단(1577-1000) 일정 확인.</li>
+    </ul>
+
+    <p class="guide-note">본 콘텐츠는 질병관리청·보건복지부 등 공개 자료를 참고한 <strong>참고용 정보이며, 의학적 진단이나 전문가의 조언을 대체하지 않습니다.</strong> 건강·발달·복용 관련 판단은 반드시 담당 의사, 소아청소년과 전문의 등과 상담하세요. 지원금·제도 정보는 2026년 기준이며 변동될 수 있습니다.</p>
+    <p class="last-updated">최종 업데이트: 2026년 7월</p>
+  </div>
+
+  <!-- RELATED-LINKS-V1 START -->
+  <div class="related-pages"><h2>함께 보면 좋은 페이지</h2>
+  <div class="related-grid">
+    <a class="related-link" href="vaccine-schedule.html"><span class="related-link-icon">💉</span><span class="related-link-name">예방접종 일정</span></a>
+    <a class="related-link" href="growth.html"><span class="related-link-icon">📏</span><span class="related-link-name">성장 기록표</span></a>
+    <a class="related-link" href="baby-subsidy.html"><span class="related-link-icon">🧮</span><span class="related-link-name">육아지원금 계산기</span></a>
+    <a class="related-link" href="seasonal-baby.html"><span class="related-link-icon">🌤️</span><span class="related-link-name">계절별 아기 관리</span></a>
+  </div></div>
+  <!-- RELATED-LINKS-V1 END -->
+  <!-- SHARE-V1 -->
+  <div class="share-row">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-native" onclick="shareThis()">🔗 공유하기</button>
+    <button class="share-btn share-copy" onclick="copyLink(event)">📋 링크 복사</button>
+  </div>
+  <!-- SHARE-V1 END -->
+  <div class="faq-section">
+    <h2>자주 묻는 질문</h2>
+    <details class="faq-item"><summary>영유아 건강검진은 무료인가요?</summary><p class="faq-answer">국가 지원 검진으로, 지정 검진기관에서 무료로 받을 수 있습니다.</p></details>
+    <details class="faq-item"><summary>검진 시기를 놓치면 어떻게 되나요?</summary><p class="faq-answer">각 차수마다 기간이 정해져 있어, 넘기면 무료 대상에서 제외될 수 있습니다. 미리 예약하세요.</p></details>
+    <details class="faq-item"><summary>발달이 늦다는 소견이 나오면요?</summary><p class="faq-answer">지나치게 걱정하기보다 담당 의사와 상담해 추적 관찰하는 것이 바람직합니다.</p></details>
+  </div></div>
+
+<button class="to-top" id="to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="맨 위로">↑</button>
+<!-- AD-SLOT-V1 [content-bottom] -->
+  <div class="ad-slot" data-ad-position="content-bottom">
+    <!-- 승인 후 ins 코드 삽입 위치 -->
+    <!-- 애드센스 승인 후 아래 형태로 교체:
+    <ins class="adsbygoogle" style="display:block"
+      data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+      data-ad-slot="XXXXXXXXXX"
+      data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+  </div>
+  <!-- AD-SLOT-V1 END -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo"><div class="footer-logo-mark">🌙</div><span class="footer-logo-text">룰루베이비</span></div>
+      <p class="footer-tagline">회원가입 없이 브라우저에서 바로 쓰는 무료 임신·육아 정보 모음입니다.<br>임신부터 육아까지 필요한 체크리스트와 정보를 한곳에서 제공합니다.<br>기록한 내용은 서버로 전송되지 않고 브라우저에만 저장됩니다.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">바로가기</div>
+      <a href="info.html" class="footer-col-link">📖 육아 정보</a>
+      <a href="essentials.html" class="footer-col-link">🛒 추천 육아템</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">안내</div>
+      <a href="about.html" class="footer-col-link">소개</a>
+      <a href="contact.html" class="footer-col-link">문의하기</a>
+      <a href="faq.html" class="footer-col-link">자주 묻는 질문</a>
+      <a href="terms.html" class="footer-col-link">이용약관</a>
+      <a href="privacy.html" class="footer-col-link">개인정보처리방침</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 lullubaby.com</span>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "영유아 건강검진은 무료인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "국가 지원 검진으로, 지정 검진기관에서 무료로 받을 수 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "검진 시기를 놓치면 어떻게 되나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "각 차수마다 기간이 정해져 있어, 넘기면 무료 대상에서 제외될 수 있습니다. 미리 예약하세요."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "발달이 늦다는 소견이 나오면요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "지나치게 걱정하기보다 담당 의사와 상담해 추적 관찰하는 것이 바람직합니다."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+const GROUPS = [{"title": "⚠️ 꼭 알아야 할 것", "items": [{"text": "검진 기간 내에만 무료 — 기간 초과 시 전액 본인부담", "note": "국민건강보험 적용, 기간 엄수"}, {"text": "건강보험공단 앱(The건강보험)에서 일정 알림 설정", "note": "검진 1개월 전 문자 발송"}, {"text": "검진 병원은 건강보험 홈페이지에서 사전 확인", "note": "소아과 또는 건강검진 지정기관"}]}, {"title": "🌙 1·2차 검진 (6~14개월)", "items": [{"text": "1차 — 생후 14~35일", "note": "신체발달·황달·시력·청력 기본 확인. ⚠️ 소아과 대란으로 예약 매우 어려움 — 퇴원 직후 \"똑닥\" 앱으로 즉시 예약 권장"}, {"text": "2차 — 생후 4~6개월", "note": "수유·이유식·발달 선별검사"}, {"text": "기관 내원 전 문진표 미리 작성", "note": "건강보험 앱에서 온라인 작성 가능"}]}, {"title": "👶 3·4차 검진 (9~18개월)", "items": [{"text": "3차 — 생후 9~12개월", "note": "K-DST 발달선별검사 포함"}, {"text": "4차 — 생후 18~24개월", "note": "언어·운동·사회성 발달 체크"}, {"text": "이 시기 이상 발견 시 발달재활바우처 신청 가능", "note": ""}]}, {"title": "🧒 5~8차 검진 (24개월~6세)", "items": [{"text": "5차 — 생후 30~36개월", "note": ""}, {"text": "6차 — 생후 42~48개월", "note": "시력검사 포함"}, {"text": "7차 — 생후 54~60개월", "note": ""}, {"text": "8차 — 생후 66~71개월", "note": "취학 전 마지막 검진"}]}, {"title": "🦷 구강검진 (4차)", "items": [{"text": "구강 1차 — 생후 18~29개월", "note": "첫 치과 방문, 불소 도포 가능"}, {"text": "구강 2차 — 생후 30~41개월", "note": ""}, {"text": "구강 3차 — 생후 42~53개월", "note": "치아우식증 예방 교육"}, {"text": "구강 4차 — 생후 54~65개월", "note": "영구치 맹출 전 점검"}]}, {"title": "📋 검진 시 지참물", "items": [{"text": "건강보험증 또는 신분증 (부모)", "note": ""}, {"text": "육아수첩 (발달 기록)", "note": ""}, {"text": "문진표 (앱에서 사전 작성 권장)", "note": ""}, {"text": "이전 검진 결과지", "note": ""}]}];
+const STORAGE_KEY = 'baby-checklist-infant-checkup';
+let state = {};
+try { state = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch(e) { state = {}; }
+
+function render() {
+  const root = document.getElementById('checklist-root');
+  let total = 0, done = 0;
+  let html = '';
+  GROUPS.forEach((g, gi) => {
+    html += '<div class="group"><h3 class="group-title">' + g.title + '</h3>';
+    g.items.forEach((it, ii) => {
+      const key = gi + '-' + ii;
+      const isDone = !!state[key];
+      total++; if (isDone) done++;
+      const note = it.note ? '<div class="check-note">' + it.note + '</div>' : '';
+      html += '<div class="check-item' + (isDone?' done':'') + '" role="checkbox" tabindex="0" aria-checked="'+(isDone?'true':'false')+'" onclick="toggle(\''+key+'\')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){event.preventDefault();toggle(\''+key+'\');}">'
+        + '<div class="check-box">' + (isDone?'✓':'') + '</div>'
+        + '<div><div class="check-text">' + it.text + '</div>' + note + '</div></div>';
+    });
+    html += '</div>';
+  });
+  root.innerHTML = html;
+  const pct = total ? Math.round(done/total*100) : 0;
+  document.getElementById('prog-label').textContent = done + '개 완료 (총 ' + total + '개)';
+  document.getElementById('prog-pct').textContent = pct + '%';
+  document.getElementById('prog-fill').style.width = pct + '%';
+}
+function toggle(key) {
+  state[key] = !state[key];
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch(e) {}
+  render();
+}
+function resetAll() {
+  if (!confirm('모든 체크를 초기화할까요?')) return;
+  state = {};
+  try { localStorage.removeItem(STORAGE_KEY); } catch(e) {}
+  render();
+}
+render();
+</script>
+<script>
+(function(){var b=document.getElementById('to-top');if(!b)return;window.addEventListener('scroll',function(){b.classList.toggle('show',window.scrollY>400);});})();
+</script>
+<script>
+function shareThis(){
+  const data={title:document.title,text:document.title,url:location.href};
+  if(navigator.share){navigator.share(data).catch(()=>{});}
+  else{copyLink();}
+}
+function copyLink(ev){
+  const url=location.href;
+  const btn=(ev&&ev.currentTarget)||document.querySelector('.share-btn.share-copy');
+  if(navigator.clipboard&&window.isSecureContext){
+    navigator.clipboard.writeText(url).then(()=>flash(btn)).catch(()=>fallbackCopy(url,btn));
+  }else{fallbackCopy(url,btn);}
+}
+function flash(btn){
+  if(!btn){alert('링크가 복사되었습니다.');return;}
+  const orig=btn.innerHTML;btn.innerHTML='✓ 복사됨';btn.classList.add('copied');
+  setTimeout(()=>{btn.innerHTML=orig;btn.classList.remove('copied');},1600);
+}
+function fallbackCopy(text,btn){
+  const ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';
+  document.body.appendChild(ta);ta.select();
+  try{document.execCommand('copy');flash(btn);}catch(e){prompt('아래 링크를 복사하세요:',text);}
+  document.body.removeChild(ta);
+}
+</script>
+</body>
+</html>

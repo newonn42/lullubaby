@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lullubaby.com/sitemap.xml

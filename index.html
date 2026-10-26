@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J36MZ05TRL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-J36MZ05TRL');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>룰루베이비 | 헤매지 않는 육아 정보 — 임신·출산·육아 가이드</title>
+<meta name="description" content="임신부터 첫 걸음까지, 곁에 두는 육아 안내서. 임신 주수별 가이드, 예방접종, 이유식, 육아지원금 정보를 한곳에.">
+<meta name="naver-site-verification" content="64c461a7c851ccfef58651619c644a276a8e8fb5" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ── RESET & BASE ── */
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --b:#5a8a6a;--b2:#4a7359;
+  --r:#dc2626;--ok:#059669;--warn:#d97706;
+  --txt:#111827;--t2:#6b7280;--t3:#9ca3af;
+  --bg:#fff;--bg2:#f8fafc;--bg3:#f1f5f9;--bd:#e2e8f0;
+  --rr:16px;--rrs:10px;--rrxs:6px;--radius-btn:8px;--radius-card:16px;
+  --shadow-sm:0 1px 4px rgba(0,0,0,.1);--shadow-md:0 2px 8px rgba(0,0,0,.12);--shadow-lg:0 6px 24px rgba(0,0,0,.1);
+  --dur:.15s;
+}
+html{scroll-behavior:smooth;}
+body{
+  overflow-x:hidden;font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,sans-serif;
+  background:var(--bg);color:var(--txt);
+  -webkit-font-smoothing:antialiased;
+  line-height:1.65;
+}
+strong,b{font-weight:600;}
+a{text-decoration:none;color:inherit;}
+
+/* ── NAV ── */
+.nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(255,255,255,.85);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--bd);
+  height:60px;display:flex;align-items:center;
+  padding:0 clamp(16px,4vw,40px);
+  justify-content:space-between;
+}
+.nav-logo{display:flex;align-items:center;gap:10px;}
+.nav-logo-mark{
+  width:34px;height:34px;border-radius:var(--rrs);
+  background:var(--b);display:flex;align-items:center;
+  justify-content:center;font-size:17px;flex-shrink:0;
+  box-shadow:0 2px 8px rgba(90,138,106,.3);
+}
+.nav-logo-text{font-size:17px;font-weight:700;letter-spacing:-.3px;}
+.nav-right{display:flex;align-items:center;gap:10px;}
+.nav-link{
+  font-size:13px;font-weight:600;color:var(--t2);
+  padding:6px 12px;border-radius:var(--radius-btn);
+  transition:all var(--dur);
+}
+.nav-link:hover{background:var(--bg2);color:var(--txt);}
+
+/* ── HERO ── */
+.hero{
+  text-align:center;
+  padding:clamp(48px,8vw,80px) clamp(16px,4vw,40px) clamp(40px,6vw,64px);
+  background:linear-gradient(180deg, #f0f5f1 0%, #ffffff 100%);
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;
+  width:600px;height:600px;
+  background:radial-gradient(circle, rgba(90,138,106,.10) 0%, transparent 70%);
+  top:-200px;left:50%;transform:translateX(-50%);
+  pointer-events:none;
+}
+.hero-title{
+  font-size:clamp(36px,6vw,60px);
+  font-weight:800;letter-spacing:.3px;line-height:1.2;
+  margin-bottom:18px;color:var(--txt);word-break:keep-all;
+}
+.hero-title em{color:#4a7359;font-style:normal;}
+.hero-desc{
+  font-size:clamp(15px,2vw,18px);
+  color:var(--t2);font-weight:500;
+  max-width:560px;margin:0 auto 32px;line-height:1.65;word-break:keep-all;
+}
+.hero-search{max-width:480px;margin:0 auto 28px;position:relative;}
+.hero-search input{
+  width:100%;padding:14px 20px 14px 48px;
+  font-size:15px;font-weight:500;
+  border:2px solid var(--bd);border-radius:50px;
+  background:#fff;color:var(--txt);outline:none;
+  font-family:inherit;transition:all var(--dur);
+  box-shadow:var(--shadow-sm);
+}
+.hero-search input:focus{border-color:#5a8a6a;box-shadow:0 0 0 4px rgba(90,138,106,.12);}
+.hero-search input::placeholder{color:var(--t3);}
+.hero-search-icon{
+  position:absolute;left:16px;top:50%;transform:translateY(-50%);
+  color:var(--t3);font-size:18px;pointer-events:none;
+}
+.hero-stats{
+  display:flex;align-items:center;justify-content:center;
+  gap:clamp(14px,3vw,28px);font-size:13px;font-weight:600;color:var(--t2);
+  flex-wrap:wrap;
+}
+.hero-stat{display:flex;align-items:center;gap:5px;}
+.hero-stat strong{color:var(--txt);}
+
+/* ── CAT BAR ── */
+.cat-bar{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:0 clamp(16px,4vw,40px);
+  border-bottom:1px solid var(--bd);
+  background:#fff;
+  overflow-x:auto;scrollbar-width:none;
+  position:sticky;top:60px;z-index:90;
+  height:52px;
+}
+@media(max-width:560px){.cat-bar{justify-content:flex-start;}}
+.cat-bar::-webkit-scrollbar{display:none;}
+.cat-btn{
+  display:flex;align-items:center;gap:6px;
+  padding:7px 16px;font-size:13px;font-weight:700;
+  border-radius:var(--radius-btn);cursor:pointer;
+  border:1.5px solid transparent;
+  background:transparent;color:var(--t2);
+  transition:all var(--dur);font-family:inherit;white-space:nowrap;
+  flex-shrink:0;
+}
+.cat-btn:hover{background:var(--bg2);color:var(--txt);}
+.cat-btn.on{background:#5a8a6a;color:#fff;box-shadow:0 2px 8px rgba(90,138,106,.25);}
+.cat-btn .cnt{font-size:11px;font-weight:700;opacity:.65;}
+
+/* ── MAIN CONTENT ── */
+.main{padding:32px clamp(16px,4vw,40px) 60px;max-width:1100px;margin:0 auto;}
+.section{margin-bottom:44px;}
+.section-header{
+  display:flex;align-items:center;gap:12px;
+  margin-bottom:18px;padding-bottom:14px;
+  border-bottom:1px solid var(--bd);
+}
+.section-icon{
+  width:36px;height:36px;border-radius:var(--rrs);
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;flex-shrink:0;
+}
+.section-name{font-size:20px;font-weight:700;letter-spacing:-.4px;}
+.section-cnt{font-size:13px;font-weight:600;color:var(--t3);margin-left:2px;}
+.section-note{margin-left:auto;font-size:12px;font-weight:600;color:var(--t3);}
+.section-more{margin-left:auto;font-size:13px;font-weight:700;color:var(--b);}
+.section-more:hover{text-decoration:underline;}
+.info-card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;}
+.home-info-card{display:flex;flex-direction:column;gap:5px;padding:18px 20px;border:1px solid var(--bd);border-radius:14px;transition:all .15s;}
+.home-info-card:hover{border-color:var(--b);box-shadow:0 4px 14px rgba(90,138,106,.12);transform:translateY(-1px);}
+.hic-tag{align-self:flex-start;font-size:11px;font-weight:700;color:var(--b2,#4a7359);background:#f0f5f1;border:1px solid #c5d9cb;border-radius:999px;padding:2px 9px;margin-bottom:3px;}
+.hic-name{font-size:15px;font-weight:700;color:var(--txt);}
+.hic-desc{font-size:12px;color:var(--t3);}
+
+/* ── CARD GRID ── */
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:12px;
+}
+.b-card{
+  display:flex;flex-direction:column;
+  padding:18px 16px;
+  background:#fff;
+  border:1.5px solid var(--bd);
+  border-radius:var(--rr);
+  cursor:pointer;
+  transition:all .2s cubic-bezier(.34,1.56,.64,1);
+  position:relative;overflow:hidden;
+  color:inherit;
+}
+.b-card::before{
+  content:'';position:absolute;
+  top:0;left:0;right:0;height:3px;
+  background:var(--card-accent,#5a8a6a);
+  transform:scaleX(0);transform-origin:left;
+  transition:transform .2s ease;
+}
+.b-card:hover{
+  border-color:var(--card-accent,#5a8a6a);
+  box-shadow:var(--shadow-lg);
+  transform:translateY(-3px);
+}
+.b-card:hover::before{transform:scaleX(1);}
+.b-card:active{transform:translateY(-1px);}
+.b-icon{
+  width:44px;height:44px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:22px;margin-bottom:12px;
+  background:var(--card-bg,#f0f5f1);
+  flex-shrink:0;
+}
+.b-name{font-size:16px;font-weight:700;color:var(--txt);margin-bottom:6px;line-height:1.3;letter-spacing:-.1px;word-break:keep-all;}
+.b-desc{font-size:13px;color:var(--t2);line-height:1.6;flex:1;word-break:keep-all;overflow-wrap:break-word;}
+.b-meta{display:flex;align-items:center;gap:6px;margin-top:10px;flex-wrap:wrap;}
+.b-hook{
+  font-size:11px;font-weight:700;
+  padding:3px 9px;border-radius:8px;
+  background:#f0f5f1;border:1.5px solid #c5d9cb;color:#4a7359;
+  line-height:1.4;
+}
+.b-pc{
+  font-size:10px;font-weight:700;
+  padding:2px 7px;border-radius:8px;
+  background:#f0f5f1;border:1px solid #c5d9cb;color:#3a5c47;
+  white-space:nowrap;
+}
+.b-pconly{
+  font-size:10px;font-weight:700;
+  padding:2px 7px;border-radius:8px;
+  background:#fef2f2;border:1px solid #fecaca;color:#991b1b;
+  white-space:nowrap;
+}
+
+/* ── HIDDEN ── */
+.hidden{display:none!important;}
+#empty-msg{text-align:center;padding:48px;color:var(--t3);font-size:14px;font-weight:600;}
+
+/* ── FOOTER ── */
+.footer{border-top:1px solid var(--bd);padding:28px clamp(16px,4vw,40px);background:var(--bg2);}
+.footer-logo{display:flex;align-items:center;gap:8px;}
+.footer-logo-mark{width:28px;height:28px;border-radius:var(--radius-btn);background:var(--b);display:flex;align-items:center;justify-content:center;font-size:13px;}
+.footer-logo-text{font-size:14px;font-weight:700;}
+.footer-copy{font-size:12px;color:var(--t3);}
+.footer-links{display:flex;gap:16px;flex-wrap:wrap;}
+.footer-links a{font-size:12px;font-weight:600;color:var(--t3);transition:color var(--dur);}
+.footer-links a:hover{color:var(--b);}
+/* ── FOOTER-V2 START ── */
+.footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:32px;align-items:start;}
+.footer-brand{display:flex;flex-direction:column;gap:8px;}
+.footer-tagline{font-size:13px;color:var(--t2);margin:0;line-height:1.7;}
+.footer-col-title{font-size:11px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;}
+.footer-col-link{display:block;font-size:13px;font-weight:600;color:var(--t2);padding:3px 0;text-decoration:none;transition:color var(--dur);}
+.footer-col-link:hover{color:var(--b);}
+.footer-bottom{max-width:1100px;margin:20px auto 0;padding-top:16px;border-top:1px solid var(--bd);text-align:center;}
+@media(max-width:680px){
+  .footer-inner{grid-template-columns:1fr 1fr;gap:20px 24px;}
+  .footer-brand{grid-column:1 / -1;}
+}
+/* ── FOOTER-V2 END ── */
+
+
+/* ── RESPONSIVE ── */
+@media(max-width:640px){
+  .card-grid{grid-template-columns:repeat(2,1fr);gap:10px;}
+  .info-card-grid{grid-template-columns:repeat(2,1fr);gap:10px;}
+}
+@media(max-width:640px){
+  .b-card{padding:14px 12px;}
+  .b-icon{width:38px;height:38px;font-size:19px;margin-bottom:9px;}
+  .b-name{font-size:14px;margin-bottom:4px;}
+  .b-desc{font-size:12px;line-height:1.5;}
+  .home-info-card{padding:14px 15px;}
+}
+@media(max-width:400px){
+  .card-grid{grid-template-columns:repeat(2,1fr);gap:8px;}
+  .info-card-grid{grid-template-columns:1fr;}
+}
+/* ── AD-SLOT-V1 ── */
+.ad-slot{margin:0 auto;max-width:1100px;min-height:0;display:flex;align-items:center;justify-content:center;background:transparent;border:none;border-radius:var(--rrs);color:var(--t3);font-size:12px;text-align:center;overflow:hidden;}
+.ad-slot .ad-label{opacity:.6;}
+.ad-slot ins{display:block;width:100%;}
+@media print{.ad-slot{display:none!important;}}
+/* ── AD-SLOT-V1 END ── */
+@media(max-width:640px){
+  /* iOS Safari auto-zooms inputs under 16px */
+  .hero-search input{font-size:16px;}
+}
+</style>
+<meta property="og:title" content="룰루베이비 | 헤매지 않는 육아 정보">
+<meta property="og:description" content="임신부터 첫 걸음까지, 곁에 두는 육아 안내서">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lullubaby.com/">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://lullubaby.com/">
+<link rel="alternate" hreflang="ko" href="https://lullubaby.com/">
+<link rel="alternate" hreflang="en" href="https://lullubaby.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://lullubaby.com/en/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "룰루베이비",
+  "alternateName": "Lullu Baby",
+  "url": "https://lullubaby.com/",
+  "description": "임신 준비부터 돌잔치까지, 체크리스트·템플릿·계산기·추천 육아템을 한곳에 모은 육아 허브. 완전 무료, 로그인 불필요.",
+  "publisher": { "@type": "Organization", "name": "룰루베이비" },
+  "inLanguage": "ko-KR"
+}
+</script>
+<!-- 애드센스 승인 후 아래 주석을 해제하세요 (게시자 ID 입력 필요):
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+-->
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-mark">🌙</div>
+    <span class="nav-logo-text">룰루베이비 <span style="font-size:12px;font-weight:600;color:var(--t2);">Lullu Baby</span></span>
+  </a>
+  <div class="nav-right">
+    <a href="https://lullubaby.com/en/" class="nav-link lang-switch" hreflang="en">🇺🇸 English</a>
+    <a href="essentials.html" class="nav-link">🛒 추천 육아템</a><a href="info.html" class="nav-link">📖 육아 정보</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1 class="hero-title">임신·출산·육아,<br><em>필요한 모든 정보가 여기에</em></h1>
+  <p class="hero-desc">질병관리청·보건복지부 등 공공기관 자료를 바탕으로 정리했습니다.<br>회원가입 없이 무료로, 모바일에서 바로 이용하세요.</p>
+  <div class="hero-search">
+    <span class="hero-search-icon">🔍</span>
+    <input type="text" id="search-input" placeholder="검색 (예: 출산가방, 예방접종, 성장기록...)" oninput="onSearch()">
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat">🌙 <strong id="content-count">0</strong>개 육아 콘텐츠</div>
+    <div class="hero-stat">🔒 내 컴퓨터에만 저장</div>
+    <div class="hero-stat">🚫 로그인 불필요</div>
+    <div class="hero-stat">📱 모바일 지원</div>
+  </div>
+</section>
+
+<!-- CAT BAR -->
+<div class="cat-bar">
+  <button class="cat-btn on" data-cat="all" onclick="setCategory('all',this)">전체 <span class="cnt" id="cnt-all">0</span></button>
+  <button class="cat-btn" data-cat="pregnancy" onclick="setCategory('pregnancy',this)">🤰 임신·출산준비 <span class="cnt" id="cnt-pregnancy">0</span></button>
+  <button class="cat-btn" data-cat="newborn" onclick="setCategory('newborn',this)">👶 신생아 <span class="cnt" id="cnt-newborn">0</span></button>
+  <button class="cat-btn" data-cat="infant" onclick="setCategory('infant',this)">🧒 영유아 <span class="cnt" id="cnt-infant">0</span></button>
+  <button class="cat-btn" data-cat="life" onclick="setCategory('life',this)">🏫 생활·이벤트 <span class="cnt" id="cnt-life">0</span></button>
+  <button class="cat-btn" data-cat="support" onclick="setCategory('support',this)">💸 정부지원금 <span class="cnt" id="cnt-support">0</span></button>
+  <a class="cat-btn" href="info.html">📖 육아 정보 <span class="cnt">20</span><span style="opacity:.5;font-size:11px;margin-left:1px;">↗</span></a>
+  <a class="cat-btn" href="essentials.html">🛒 추천 육아템 <span class="cnt">6</span><span style="opacity:.5;font-size:11px;margin-left:1px;">↗</span></a>
+</div>
+
+<!-- MAIN -->
+<main class="main">
+  <div id="empty-msg" style="display:none;">🔍 검색 결과가 없습니다.</div>
+
+  <section class="section" id="sec-pregnancy" data-cat="pregnancy">
+    <div class="section-header">
+      <div class="section-icon" style="background:#fdf2f8;">🤰</div>
+      <span class="section-name">임신·출산 준비</span>
+      <span class="section-cnt">7개</span>
+    </div>
+    <div class="card-grid" id="grid-pregnancy"></div>
+  </section>
+
+  <section class="section" id="sec-newborn" data-cat="newborn">
+    <div class="section-header">
+      <div class="section-icon" style="background:#f0f5f1;">👶</div>
+      <span class="section-name">신생아</span>
+      <span class="section-cnt">6개</span>
+    </div>
+    <div class="card-grid" id="grid-newborn"></div>
+  </section>
+
+  <section class="section" id="sec-infant" data-cat="infant">
+    <div class="section-header">
+      <div class="section-icon" style="background:#eef4f7;">🧒</div>
+      <span class="section-name">영유아</span>
+      <span class="section-cnt">4개</span>
+    </div>
+    <div class="card-grid" id="grid-infant"></div>
+  </section>
+
+  <section class="section" id="sec-life" data-cat="life">
+    <div class="section-header">
+      <div class="section-icon" style="background:#ecfeff;">🏫</div>
+      <span class="section-name">생활·이벤트</span>
+      <span class="section-cnt">3개</span>
+    </div>
+    <div class="card-grid" id="grid-life"></div>
+  </section>
+
+  <section class="section" id="sec-support" data-cat="support">
+    <div class="section-header">
+      <div class="section-icon" style="background:#f5f3ff;">💸</div>
+      <span class="section-name">정부지원금</span>
+      <span class="section-cnt">2개</span>
+    </div>
+    <div class="card-grid" id="grid-support"></div>
+  </section>
+
+  <section class="section" id="sec-essentials" data-cat="essentials">
+    <div class="section-header">
+      <div class="section-icon" style="background:#fff1f2;">🛒</div>
+      <span class="section-name">추천 육아템</span>
+      <span class="section-cnt">6개</span>
+      <span class="section-note">쿠팡 파트너스 포함</span>
+    </div>
+    <div class="card-grid" id="grid-essentials"></div>
+  </section>
+
+  <section class="section" id="sec-info" data-cat="info">
+    <div class="section-header">
+      <div class="section-icon" style="background:#f0f5f1;">📖</div>
+      <span class="section-name">육아 정보</span>
+      <a class="section-more" href="info.html">전체 보기 →</a>
+    </div>
+    <div class="info-card-grid">
+      <a class="home-info-card" href="info/info-pregnancy-guide.html">
+        <span class="hic-tag">임신·출산</span>
+        <span class="hic-name">임신 주수별 완벽 가이드</span>
+        <span class="hic-desc">초기·중기·후기 몸의 변화와 검사 일정</span>
+      </a>
+      <a class="home-info-card" href="info/info-birth-method.html">
+        <span class="hic-tag">임신·출산</span>
+        <span class="hic-name">자연분만 vs 제왕절개</span>
+        <span class="hic-desc">차이·회복 기간·선택 기준 비교</span>
+      </a>
+      <a class="home-info-card" href="info/info-newborn-sleep-guide.html">
+        <span class="hic-tag">신생아</span>
+        <span class="hic-name">신생아 수면 패턴 이해하기</span>
+        <span class="hic-desc">통잠·수면교육 시기와 안전 수면</span>
+      </a>
+      <a class="home-info-card" href="info/info-vaccine-guide.html">
+        <span class="hic-tag">영유아</span>
+        <span class="hic-name">예방접종 A to Z</span>
+        <span class="hic-desc">국가필수·선택 접종 시기와 주의사항</span>
+      </a>
+      <a class="home-info-card" href="info/info-daycare-guide.html">
+        <span class="hic-tag">영유아</span>
+        <span class="hic-name">어린이집 입소·적응 가이드</span>
+        <span class="hic-desc">대기 신청부터 분리불안 극복까지</span>
+      </a>
+      <a class="home-info-card" href="info/info-childcare-benefits.html">
+        <span class="hic-tag">지원·제도</span>
+        <span class="hic-name">2026 육아지원금 총정리</span>
+        <span class="hic-desc">부모급여·첫만남이용권·아동수당</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+
+
+<!-- AD-SLOT-V1 [home-bottom] -->
+<div class="ad-slot" data-ad-position="home-bottom">
+  <!-- 승인 후 ins 코드 삽입 위치 -->
+  <!-- 애드센스 승인 후 ins 코드로 교체 -->
+</div>
+<!-- AD-SLOT-V1 END -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo"><div class="footer-logo-mark">🌙</div><span class="footer-logo-text">룰루베이비</span></div>
+      <p class="footer-tagline">회원가입 없이 브라우저에서 바로 쓰는 무료 임신·육아 정보 모음입니다.<br>임신부터 육아까지 필요한 체크리스트와 정보를 한곳에서 제공합니다.<br>기록한 내용은 서버로 전송되지 않고 브라우저에만 저장됩니다.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">바로가기</div>
+      <a href="info.html" class="footer-col-link">📖 육아 정보</a>
+      <a href="essentials.html" class="footer-col-link">🛒 추천 육아템</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">안내</div>
+      <a href="about.html" class="footer-col-link">소개</a>
+      <a href="contact.html" class="footer-col-link">문의하기</a>
+      <a href="faq.html" class="footer-col-link">자주 묻는 질문</a>
+      <a href="terms.html" class="footer-col-link">이용약관</a>
+      <a href="privacy.html" class="footer-col-link">개인정보처리방침</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 lullubaby.com</span>
+    <span class="footer-copy" style="margin-left:8px;">· 최종 업데이트: 2026년 7월</span>
+  </div>
+</footer>
+
+<script>
+// ── 데이터 ──────────────────────────────────────────────────────
+const ITEMS = {
+  pregnancy: [
+    {id:'pregnancy', icon:'🤰', name:'임신 중 준비', desc:'임신 확인부터 출산까지 단계별 준비', hook:'단계별 필수 가이드'},
+    {id:'hospital-bag', icon:'🎒', name:'출산 가방 체크리스트', desc:'병원 가방에 챙겨야 할 모든 것', hook:'출산 D-30 필수'},
+    {id:'prenatal-checkup', icon:'🔬', name:'산전 검사·검진 일정', desc:'임신 주수별 필수 검사 일정 체크', hook:'놓치면 재검사'},
+    {id:'prenatal-supplement', icon:'💊', name:'임산부 시기별 영양제', desc:'임신 시기별 챙겨야 할 영양제 정리', hook:'안 챙기면 후회'},
+    {id:'pregnancy-precautions',icon:'⚠️', name:'임신 중 금기·주의사항', desc:'약·음식·생활 환경 주의사항 정리', hook:'모르고 하면 위험'},
+    {id:'birth-plan', icon:'📋', name:'출산 계획서 작성 가이드', desc:'자연분만·제왕절개 등 출산 계획 정리', hook:'의료진과 미리 공유'},
+    {id:'prenatal-health',  icon:'📊', name:'임신 중 건강수치 관리표', desc:'주수별 체중·혈압·혈당·부종 기록표', hook:'매 검진마다 기록'},
+  ],
+  newborn: [
+    {id:'vaccine-schedule', icon:'💉', name:'예방접종 일정 체크', desc:'출생부터 만 12세까지 접종 일정', hook:'놓치면 재접종'},
+    {id:'newborn-items', icon:'🧸', name:'신생아 육아용품', desc:'꼭 필요한 것만 골라낸 신생아 용품', hook:'꼭 필요한 것만'},
+    {id:'weaning', icon:'🥣', name:'월령별 이유식 식단표', desc:'초기~완료기 4단계 식단·알레르기', hook:'4단계 한눈에'},
+    {id:'growth', icon:'📏', name:'아이 성장 기록표', desc:'월령별 키·몸무게·발달 이정표', hook:'성장이 느릴 때'},
+    {id:'baby-proofing', icon:'🛡️', name:'베이비프루핑·안전점검', desc:'기어다니기 전 안전 점검 체크리스트', hook:'기어다니기 전 필수'},
+    {id:'handover', icon:'🔄', name:'육아 인수인계 시트', desc:'수유·수면·투약 교대 기록', hook:'할머니·이모님께 딱'},
+  ],
+  infant: [
+    {id:'infant-checkup', icon:'🏥', name:'영유아 건강검진 체크', desc:'8차 정기 검진 일정과 준비물', hook:'무료 검진 놓치지 마세요'},
+    {id:'baby-food-allergy', icon:'🥣', name:'이유식·알레르기 기록', desc:'식재료별 알레르기 반응 체크', hook:'기록이 생명'},
+    {id:'babyfood', icon:'🥗', name:'유아식 식단표 & 알레르기', desc:'주간 식단과 알레르기 반응 기록', hook:'식단도 알레르기도 같이'},
+    {id:'seasonal-baby', icon:'🌡️', name:'영유아 계절별 관리', desc:'여름·겨울철 아기 건강 관리법', hook:'계절마다 달라요'},
+  ],
+  life: [
+    {id:'daycare-first', icon:'🏫', name:'어린이집 첫 등원 준비', desc:'등원 준비물과 적응 기간 가이드', hook:'분리불안 줄이는 법'},
+    {id:'baby-travel', icon:'✈️', name:'아기랑 여행 준비', desc:'국내·해외 여행 준비물 체크', hook:'짐 빠뜨리지 마세요'},
+    {id:'first-birthday', icon:'🎂', name:'돌잔치 준비', desc:'D-90부터 당일까지 준비 체크리스트', hook:'D-90부터 시작'},
+  ],
+  support: [
+    {id:'baby-subsidy',  icon:'🧮', name:'육아지원금 계산기', desc:'첫만남이용권·부모급여·아동수당 계산', hook:'내가 받을 금액은?'},
+    {id:'baby-benefit', icon:'💸', name:'출산·육아 지원금', desc:'정부 지원금 종류와 신청 체크리스트', hook:'모르면 못 받는 돈'},
+  ],
+};
+
+// 추천 육아템 (essentials.html 카테고리 딥링크)
+const ESSENTIALS = [
+  {cat:'pregnancy', icon:'🤰', name:'임산부 필수템',   desc:'영양제·복대·수면쿠션 등'},
+  {cat:'newborn',   icon:'👶', name:'신생아 필수템',   desc:'카시트·바디수트·체온계 등'},
+  {cat:'feed',      icon:'🌙', name:'수유 용품',       desc:'유축기·수유등·젖병 등'},
+  {cat:'weaning',   icon:'🥣', name:'이유식 용품',     desc:'조리기·식판·이유식 의자 등'},
+  {cat:'infant',    icon:'🧒', name:'유아기 용품',     desc:'카시트·유아차 등 성장 단계별'},
+  {cat:'safety',    icon:'🛡️', name:'베이비프루핑',    desc:'콘센트 커버·안전문 등'},
+];
+
+
+let currentCat = 'all', searchQ = '';
+
+function buildCard(item, cat) {
+  const pcBadge = item.pcOnly ? `<span class="b-pconly">PC전용</span>` : (item.pcRec ? `<span class="b-pc">PC추천</span>` : '');
+  return `<a class="b-card" href="${item.id}.html">
+    <div class="b-icon">${item.icon}</div>
+    <div class="b-name">${item.name}</div>
+    <div class="b-desc">${item.desc}</div>
+    <div class="b-meta">
+      ${pcBadge}
+    </div>
+  </a>`;
+}
+
+function buildEssentialCard(e) {
+  return `<a class="b-card ess-card" href="essentials.html?cat=${e.cat}">
+    <div class="b-icon">${e.icon}</div>
+    <div class="b-name">${e.name}</div>
+    <div class="b-desc">${e.desc}</div>
+    <div class="b-meta">
+      <span class="b-hook">추천템 보기 →</span>
+    </div>
+  </a>`;
+}
+
+function buildGrid(cat) {
+  if (cat === 'essentials') {
+    const filtered = searchQ ? ESSENTIALS.filter(e=>e.name.includes(searchQ)||e.desc.includes(searchQ)) : ESSENTIALS;
+    return filtered.map(buildEssentialCard).join('');
+  }
+  const list = ITEMS[cat] || [];
+  const filtered = searchQ ? list.filter(i=>i.name.includes(searchQ)||i.desc.includes(searchQ)) : list;
+  return filtered.map(i=>buildCard(i, cat)).join('');
+}
+
+function render() {
+  let anyVisible = false;
+  ['pregnancy','newborn','infant','life','support','essentials'].forEach(cat => {
+    const sec = document.getElementById('sec-'+cat);
+    const grid = document.getElementById('grid-'+cat);
+    if (!sec || !grid) return; // 요소 없으면 이 카테고리만 건너뜀 (전체 중단 방지)
+    const show = searchQ ? true : (currentCat === 'all' || currentCat === cat);
+    if (!show) { sec.classList.add('hidden'); return; }
+    const html = buildGrid(cat);
+    grid.innerHTML = html || '';
+    const secHide = !html;
+    sec.classList.toggle('hidden', secHide);
+    if (!secHide) anyVisible = true;
+  });
+  const emptyEl = document.getElementById('empty-msg');
+  if (emptyEl) emptyEl.style.display = anyVisible ? 'none' : 'block';
+
+  // 육아 정보 섹션: 검색 중이거나 '전체'일 때만 표시 (특정 카테고리 필터 시 숨김)
+  const infoSec = document.getElementById('sec-info');
+  if (infoSec) infoSec.classList.toggle('hidden', !(searchQ || currentCat === 'all'));
+}
+
+function setCategory(cat, el) {
+  currentCat = cat;
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('on'));
+  el.classList.add('on');
+  render();
+  if (cat !== 'all') {
+    const sec = document.getElementById('sec-'+cat);
+    if (sec) setTimeout(() => sec.scrollIntoView({behavior:'smooth',block:'start'}), 50);
+  }
+}
+
+function onSearch() {
+  searchQ = document.getElementById('search-input').value.trim();
+  if (searchQ) {
+    currentCat = 'all';
+    document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('on'));
+    document.querySelector('[data-cat="all"]').classList.add('on');
+  }
+  render();
+}
+
+document.addEventListener('keydown', e => {
+  if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+    e.preventDefault();
+    document.getElementById('search-input').focus();
+  }
+  if (e.key === 'Escape') {
+    document.getElementById('search-input').value = '';
+    searchQ = '';
+    render();
+  }
+});
+
+// 콘텐츠 개수 동적 표시 (전체 + 카테고리별)
+function updateCounts(){
+  const total = Object.values(ITEMS).reduce((sum, arr) => sum + arr.length, 0);
+  const heroEl = document.getElementById('content-count');
+  if (heroEl) heroEl.textContent = total;
+  const allEl = document.getElementById('cnt-all');
+  if (allEl) allEl.textContent = total;
+  Object.keys(ITEMS).forEach(cat => {
+    const el = document.getElementById('cnt-'+cat);
+    if (el) el.textContent = ITEMS[cat].length;
+  });
+}
+
+function init(){
+  try { updateCounts(); } catch(e) { console.error('카운트 오류:', e); }
+  try { render(); } catch(e) { console.error('렌더 오류:', e); }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
+}
+</script>
+</body>
+</html>
